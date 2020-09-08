@@ -1,0 +1,183 @@
+.contacts {
+    height: 100vh;
+    width: 100%;
+    background: url(contact.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    color: #ffffff;
+}
+
+.contact-Heading {
+    font-size: 80px;
+    letter-spacing: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20%;
+    margin-top: 5vh;
+}
+.contact-Heading > span {
+    position: relative;
+}
+
+.contact-Heading span::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    width: 20%;
+    border-bottom: 2px solid #768ad9;
+}
+
+/* left arrow */
+.arrow-left-contact {
+    display: flex;
+    border-radius: 50%;
+    background-color: azure;
+    height: 40px;
+    width: 40px;
+    grid-column-start: col-1;
+    grid-column-end: col-2;
+    grid-row-start: row-1;
+    grid-row-end: row-3;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Arrow-left Image */
+.arrow-left-contact>div.image {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-image: url(left-arrow.png);
+    background-size: cover;
+    line-height: 4px;
+}
+
+/* Right Arrow */
+.arrow-right-contact {
+    display: flex;
+    border-radius: 50%;
+    background-color: azure;
+    height: 40px;
+    width: 40px;
+    grid-column-start: col-3;
+    grid-column-end: col-4;
+    grid-row-start: row-1;
+    grid-row-end: row-3;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Arrow-right Image */
+.arrow-right-contact>div.image {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-image: url(right-arrow.png);
+    background-size: cover;
+    line-height: 4px;
+}
+
+
+
+/* Contact details box starts here*/
+.contact-Body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: [col-1] 10% [col-2] 80% [col-3] 10% [col-4] auto [end];
+    grid-template-rows: [row-1] 0vw [row-2] 70vh [row-3] auto [end];
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-column-start: col-2;
+    grid-column-end: col-3;
+    grid-row-start: row-1;
+    grid-row-end: row-3;
+    transition: 0.3s ease-in-out;
+}
+
+.cards-profile {
+    width: 30%;
+    background-color: #1b191e;
+    border-radius: 10px;
+    margin: 0 25px 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+    transition: 0.25s ease-in-out;
+}
+.profile-pic {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name {
+    align-items: center;
+    padding: 2% 0 2% 0;
+}
+.name span {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.position {
+    align-items: center;
+    padding: 2% 0 2% 0;
+}
+.position span {
+    color: white;
+    font-size: 0.9em;
+}
+
+
+.phone {
+    align-items: center;
+    padding: 2% 0 2% 0;
+}
+.phone a {
+    color: white;
+    font-size: 0.7em;
+}
+
+
+.email {
+    align-items: center;
+    padding: 2% 0 2% 0;
+}
+.email a {
+    color: white;
+    font-size: 0.9em;
+}
+
+
+.cards-profile .dash {
+    width: 30%;
+    height: 2px;
+    background-color: #768ad9;
+    margin: 5% 0 5% 0;
+}
+

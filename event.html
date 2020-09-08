@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event | Technika'21</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Modified CSS -->
+    <link rel="stylesheet" href="Event/navbarEvent.css">
+    <link rel="stylesheet" href="Event/eventMain.css">
+    <link rel="stylesheet" href="Event/scrollbarEvent.css">
+</head>
+<body>
+        <!--1st Section-->
+        <!--NAV-BAR STARTS HERE-->
+
+        <nav>
+            <div class="logo">
+                <h4>The Nav</h4>
+            </div>
+
+            <!--Shown Nav-Links-->
+            <ul class="nav-links">
+                
+            </ul>
+
+            <!--Hidden Nav-Links-->
+            <ul class="nav-links-1">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="CurrentSponsor.html">SPONSERS</a></li>
+                <li><a href="sponser.html">PAST SPONSERS</a></li>
+                <li><a href="index.html#videos">VIDEOS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="index.html#contact">CONTACT US</a></li>
+                <li><a href="#">DEVELOPERS</a></li>
+            </ul>
+            <!--Hamburger-->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+
+        <!--NAV-BAR ENDS HERE-->
+
+        <!--LANDING PAGE-->
+        <div class="about-Heading">
+            <span>
+               Events 
+            </span>
+        </div>
+
+        <!-- EVENT CONTAINER -->
+
+        <div class="event-arrow" onclick="navigateEvent(eventIndex - 1)"></div>
+        <div class="event-arrow" onclick="navigateEvent(eventIndex + 1)"></div>
+
+        <!-- CONTAINER ONE -->
+        <!-- <div class="event-wrapper"> -->
+            <div class="event-container">
+                <div class="event-card">
+                    <div class="event-card-front">
+                        <div class="event-name">Drama</div>
+                        <div class="event-img"></div>
+                        <hr align="center" width="35%" size="5px" color="#9A6D9A">
+                        <div class="event-link">View Details &gt;</div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        <!-- CONTAINER ONE ENDS -->
+
+        
+
+        
+
+    <!--NAVBAR AND LANDING PAGE ENDS HERE-->
+
+
+    <!-- Buttons from FontAwesome Gallery -->
+    <div id="fixed-Btn">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    </div>
+    <!-- Buttons from FontAwesome Gallery ENDS here -->
+
+    <!-- JS files for this page -->
+    <script src="Event/navbarEvent.js"></script>
+    <script src="Event/Event.js"></script>
+</body>
+</html>

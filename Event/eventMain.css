@@ -1,0 +1,192 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 102vh;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(eventsbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+}
+/* section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(eventsbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+} */
+
+.about-Heading {
+    font-size: 70px;
+    color: rgba(226, 226, 226, 1);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-transform: uppercase;
+    margin: -25px auto;
+    /* text-shadow: 0 0 20px #00ffff; */
+}
+
+.about-Heading > span {
+    position: relative;
+    letter-spacing: 10px;
+    /* filter: blur(1px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                 0 0 20px rgba(255, 255, 255, 1),
+                 0 0 40px rgba(255, 255, 255, 1),
+                 0 0 80px rgba(255, 255, 255, 1),
+                 0 0 160px rgba(255, 255, 255, 1);
+    animation: animateText 10s linear infinite; */
+}
+/* 
+@keyframes animateText 
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+} */
+
+.about-Heading span::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    width: 20%;
+    border-bottom: 2px solid #768ad9;
+}
+
+
+
+/* EVENT CONTAINER */
+.event-wrapper {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.event-container {
+    width: 100vw;
+    height: calc(30vw + 30px);
+    padding: 30px 12.5%;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s ease-out;
+}
+
+.event-container .event-card.active {
+    transform: scale(1.25);
+}
+
+
+.event-arrow {
+    height: 4.5vw;
+    width: 2.5vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(events-arrow.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 5%;
+}
+.event-arrow:nth-of-type(1) {
+    transform: translateY(-50%) rotateY(180deg);
+    left: 5%;
+}
+.event-arrow:nth-of-type(2) {
+    right: 5%;
+}
+
+.event-card {
+    width: 19.33%;
+    min-width: 19.33%;
+    margin: 0 7%;
+    height: 20vw;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(#393636, #1F1F1F);
+    transition: 0.5s ease-out;
+}
+
+.event-card .event-card-front {
+    width: 95%;
+    height: 95%;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5%;
+    border: 2px solid #9A6D9A;
+}
+
+.event-card .event-card-front .event-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: center;
+}
+.event-card .event-card-front .event-img {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    border: 7.5px solid #9A6D9A;
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.event-card .event-card-front .event-link {
+    font-size: 17.5px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+/* EVENT CONTAINER ENDS HERE */
+
+
+
+/* FONT AWESOME BUTTONS AT THE BOTTOM */
+#fixed-Btn {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+
+#fixed-Btn a i{
+    color: white;
+    font-size: 38px;
+    padding-left: 21px;
+    /* text-shadow: 0 0 20px #00ffff; */
+}
