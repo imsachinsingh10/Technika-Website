@@ -193,3 +193,14 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+
+@media screen and (max-width: 768px) {
+    .nav-links-1 {
+        z-index: 1;
+        width: 75vw;
+    }
+
+    .burger {
+        z-index: 2;
+    }
+}

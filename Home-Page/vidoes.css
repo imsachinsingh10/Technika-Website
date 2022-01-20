@@ -84,3 +84,18 @@
     cursor: pointer;
     font-weight: 500;
 }
+
+@media (max-width: 786px) {
+    .videos {
+        height: auto;
+    }
+
+    .video-Heading {
+        font-size: 40px;
+        padding-left: 60%;
+    }
+
+    .video-Body {
+        flex-wrap: inherit;
+    }
+}

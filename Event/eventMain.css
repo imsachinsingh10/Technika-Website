@@ -70,7 +70,7 @@ body, html {
 
 
 /* EVENT CONTAINER */
-.event-wrapper {
+.events-wrapper {
     width: 75%;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ body, html {
 .event-container {
     width: 100vw;
     height: calc(30vw + 30px);
-    padding: 30px 12.5%;
+    /* padding: 30px 12.5%; */
     box-sizing: border-box;
     display: inline-flex;
     justify-content: flex-start;

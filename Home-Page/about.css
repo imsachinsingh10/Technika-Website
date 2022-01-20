@@ -193,3 +193,21 @@ body{
         z-index: 99;
     }
 }
+
+@media (max-width: 786px) {
+    .about {
+        background: url(aboutMobile.jpg);
+        background-size: 100% 100%;
+    }
+
+    .about-Heading {
+        font-size: 40px;
+    }
+
+    .aboutText {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        line-height: 30px;
+        font-size: 18px;
+    }
+}

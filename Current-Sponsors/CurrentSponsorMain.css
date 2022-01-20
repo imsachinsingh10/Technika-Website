@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    text-shadow: 0 0 20px #008aff;
+    /* text-shadow: 0 0 20px #008aff; */
 }
 section {
     position: relative;
@@ -81,6 +81,7 @@ section {
     overflow-y: scroll;
     margin: 75px auto;
     padding-bottom: 5%;
+    font-family: 'Shizuru', cursive;
 }
 
 
@@ -88,7 +89,7 @@ section {
     text-align: center;
     letter-spacing: 3px;
     font-size: 30px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: white;
     text-transform: uppercase;
     font-weight: 500;
@@ -153,4 +154,34 @@ section {
     color: white;
     font-size: 38px;
     padding-left: 21px;
+}
+
+@media (max-width: 786px) {
+    section {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(current_SPonsor_Mobile.jpg);
+        background-size: 100% 100%;
+    }
+
+    .about-Heading {
+        margin: 10px auto;
+        font-size: 40px;
+    }
+
+    .container {
+        transform: translateY(-10%);
+        width: 80%;
+        height: 55%;
+    }
+
+    .sponsor-heading {
+        font-size: 25px;
+    }
+
+    .sponsor-image img {
+        width: 40vw;
+    }
+
+    .official-Media {
+        flex-direction: column;
+    }
 }

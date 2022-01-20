@@ -83,7 +83,7 @@ function backContact() {
 function divideToGroups() {
     if (widthScreen > 966) {
         displayAll();
-        noOfCards = 3;
+        noOfCards = 2;
         group = 1;
         noOfGroups = Math.ceil(cardsContact.length / noOfCards);
         for (var i = 0; i < cardsContact.length; i++) {
